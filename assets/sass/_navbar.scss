@@ -1,0 +1,26 @@
+.menu {
+	--height: 76px;
+	float:right;
+	li {
+		list-style-type: none;
+		float:left;
+		line-height: 76px;
+		a{
+			text-decoration: none;
+			color:$yazi_rengi;
+			line-height: 48px;
+			padding: 5px 25px;
+			&:hover{
+			border-radius: 20px;
+			color:white;
+			background-color: $goy;
+
+		}
+		}
+	
+	}
+}
+
+#navbar h1{
+	line-height: 76px;
+}

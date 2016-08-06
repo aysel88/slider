@@ -1,0 +1,37 @@
+#features{
+	position: relative;
+	.some {
+		padding-left: 30px;
+		padding-top: 100px;
+		padding-bottom: 60px;
+
+		h2{
+			font-weight: 700;
+		}
+		p{
+			font-weight: bold;
+		}
+	}
+	.col-md-4{
+		padding-bottom:32px;
+	}
+	.buton{
+
+		background-color: $goy;
+		color: white;
+		height: 40px;
+		width: 165px;
+		text-align: center;
+		margin:0 auto;
+		margin-bottom: 100px;
+		border-radius: 20px;
+		p{
+			padding:10px 0;
+		}
+	}
+	.ucbucaq{
+		position: absolute;
+		bottom:0;
+		right: 100px;
+	}
+}

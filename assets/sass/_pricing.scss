@@ -1,0 +1,66 @@
+#pricing {
+	--margin-top:100px;
+	h3{
+		margin: 100px 0 15px 15px;
+		font-weight: bolder;
+	}
+	h4{
+		margin:0 0 45px 15px;
+
+	}
+	.dordluk{
+		--width: 1170px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		div{
+			height: 425px;
+			width: 260px;
+			border:1px solid $tundboz;
+			float: left;
+			margin:15px;
+			p:nth-child(1){
+				line-height:68px;
+				border-bottom: 1px solid  $aciqboz;
+				font-size: 30px;
+				font-weight: bolder;
+			}
+			p:nth-child(2){
+				line-height:60px;
+				border-bottom: 1px solid  $aciqboz;	
+				font-size: 18px;
+				font-weight: bold;
+				color:$tundboz;
+
+				span{
+					color:$narinci;
+				}
+			}
+			p:nth-child(3){
+				margin-top: 40px;
+				color:$tundboz;
+			}
+			p:nth-child(4){
+				line-height: 30px;
+				color:$tundboz;
+			}
+			p:nth-child(5){
+				line-height: 30px;
+				color:$tundboz;
+			}
+			.buton{
+				clear: both;
+				width: 130px;
+				height: 40px;
+				background-color: $goy;
+				border-radius: 20px;
+				color:white;
+				margin: 0 60px;
+				position: relative;
+				bottom:-40px;
+			}
+		}
+	}
+
+
+}

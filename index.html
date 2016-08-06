@@ -1,0 +1,518 @@
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="sass/
+	_bootstrap.css"> --> 
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+	<link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<section id = 'navbar'>
+		<div class = 'container'>
+			<div class = 'row'>
+				<ul class = 'menu'>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blogs</a></li>
+					<li><a href="#">Pages</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<h1>
+					<img src="assets/images/logo.png">
+				</h1>
+			</div>
+		</div>
+	</section>
+
+	<section id = 'image'>
+		<div class = 'container-fluid'>
+			<div class = 'row'>
+				<div class = 'sliderimage'>
+					<img src="assets/images/01.jpg">
+				</div>
+				<div class = 'text'>
+					<p>
+						LEYLA
+					</p>
+				</div>
+				<!-- <div class = 'buttongroup'> -->
+					<button class = 'leftbutton' onclick = 'prev()'>
+						<i class="fa fa-arrow-left fa-4x" aria-hidden="true"></i>
+					</button>
+					<button class = 'rightbutton' onclick = 'next()'>
+						<i class="fa fa-arrow-right fa-4x" aria-hidden="true"></i>
+					</button>
+				<!-- </div> -->
+			</div>	
+		</div>
+	</section>
+	<script type="text/javascript">
+			imgArr = ['assets/images/01.jpg','assets/images/02.jpg','assets/images/03.jpg','assets/images/04.jpg','assets/images/05.jpg'];
+			txtArr = ['Sara',':))','Aysel','Fidan','Leyla'];
+			var imageSource = document.getElementById('image').getElementsByClassName('sliderimage')[0].getElementsByTagName('img')[0];
+			var textSource = document.getElementById('image').getElementsByClassName('text')[0].getElementsByTagName('p')[0];
+
+			imageSource.src = imgArr[0];
+			textSource.innerHTML = txtArr[0];
+			count = 0;
+			function prev(){
+				count--;
+				if(count<0){
+					count = imgArr.length - 1;
+				}
+				imageSource.src = imgArr[count];
+				textSource.innerHTML = txtArr[count];
+				console.log(count);
+			}
+			
+
+			function next(){
+				count++;
+				if(count == imgArr.length){
+					count = 0;
+				}
+				imageSource.src = imgArr[count];
+				textSource.innerHTML = txtArr[count];
+				console.log(count);
+			}
+
+			setInterval(next,5000);
+	</script>
+
+	<section>
+		Ele hesab edek ki burda bir dene what we are yazisi olan div var :))
+	</section>
+
+	<section id = 'features'>
+		<div class = 'container'>
+			<div class = 'row'>
+				<div class = 'some'>
+					<h2>
+						FEATURES
+					</h2>
+					<p>
+						SOME OF OUR FEATURES
+					</p>
+				</div>
+			</div>
+			<div class = 'row'>
+				<div class = 'col-md-4'>
+					<!-- <div class = 'row'> -->
+						<div class = 'col-md-4'>
+							<img src="assets/images/kitab.png">
+						</div>
+						<div class = 'col-md-8'>
+							<p>
+								DATA ENTRY
+							</p>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesettin indurstry.Lorem ipsum has been
+							</p>
+						</div>
+					<!-- </div> -->	
+				</div>
+				<div class = 'col-md-4'>
+					<div class = 'col-md-4'>
+						<img src="assets/images/client.png">
+					</div>
+					<div class = 'col-md-8'>
+							<p>
+								CLIENT MANAGEMENT
+							</p>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesettin indurstry.Lorem ipsum has been
+							</p>
+					</div>
+				</div>
+				<div class = 'col-md-4'>
+					<div class = 'col-md-4'>
+						<img src="assets/images/data.png">
+					</div>
+					<div class = 'col-md-8'>
+						<p>
+							BETTER COMMUNICATION	
+						</p>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesettin indurstry.Lorem ipsum has been
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class = 'row'>
+				<div class = 'col-md-4'>
+					<div class = 'col-md-4'>
+						<img src="assets/images/analiz.png">
+					</div>
+					<div class = 'col-md-8'>
+						<p>
+							WELL ANALYZING TEAM
+						</p>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesettin indurstry.Lorem ipsum has been
+						</p>
+					</div>
+				</div>
+				<div class = 'col-md-4'>
+					<div class = 'col-md-4'>
+						<img src="assets/images/support.png">
+					</div>
+					<div class = 'col-md-8'>
+						<p>
+							24 HOUR SUPPORT
+						</p>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesettin indurstry.Lorem ipsum has been
+						</p>
+					</div>
+				</div>
+				<div class = 'col-md-4'>
+					<div class = 'col-md-4'>
+						<img src="assets/images/keep.png">
+					</div>
+					<div class = 'col-md-8'>
+						<p>
+							KEEPING BUSINESS DATA
+						</p>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesettin indurstry.Lorem ipsum has been
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class = 'row'>
+					<div class= 'buton'>
+						<p>
+							MORE FEATURES
+						</p>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<section id = 'happy'>
+		<div class = 'container-fluid'>
+			<div class = 'row'>
+				<h3>
+					HAPPY
+				</h3>
+				<h2>
+					CLIENTS
+				</h2>
+				<div class = 'round'>
+					<i class="fa fa-quote-right" aria-hidden="true"></i>
+				</div>
+				<div class = 'paraqraf'>
+					<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+					<p>
+						 Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<i class="fa fa-quote-right fa-2x" aria-hidden="true"></i>
+				</div>
+				<p>
+					By
+				</p>
+				<p>
+					AYSEL FETELIYEVA
+				</p>
+				<div class= 'pentagon'>
+					<div>
+						<img src="assets/images/pentagon.png">
+					</div>
+					<div>
+						<img src="assets/images/pentagon.png">
+					</div>
+					<div>
+						<img src="assets/images/pentagon.png">
+					</div>
+					<div>
+						<img src="assets/images/pentagon.png">
+					</div>
+					<div>
+						<img src="assets/images/pentagon.png">
+					</div>
+				</div>
+				<div class = 'leftbtn'>
+					<button onClick = 'previus()'>
+						<<<
+					</button>
+				</div>
+				<div class = 'rightbtn'>
+					<button onClick = 'nextt()'>
+						>>>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		textArray = ['Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',' It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.'];
+
+			Source = document.getElementById('happy').getElementsByClassName('paraqraf')[0].getElementsByTagName('p')[0];
+		count1 = 0;
+		function previus(){
+			count1--;
+			if(count1<0){
+				count1 = textArray.length - 1;
+			}
+			Source.innerHTML = textArray[count1];
+		}
+
+		function nextt(){
+			count1++;
+			if(count1 == textArray.length){
+				count1 = 0;
+			}
+			Source.innerHTML = textArray[count1];
+		}
+		setInterval(nextt,5000);
+	</script>
+
+	<section id = 'pricing'>
+		<div class = 'container'>
+			<div class = 'row'>
+				<h3>
+					PRICING
+				</h3>
+				<h4>
+					SOME OF OUR FEATURE
+				</h4>
+			</div>
+			<div class = 'row'>
+				<div class = 'dordluk'>
+					<div>
+						<p>
+							PERSONAL
+						</p>
+						<p>
+							FROM <span>100$ </span>PER MONTH
+						</p>
+						<p>
+							Business Suppport
+						</p>
+						<p>
+							Business Analysis
+						</p>
+						<p>
+							24 our support
+						</p>
+						<div class = 'buton'>
+							START NOW
+						</div>	
+					</div>
+					<div>
+						<p>
+							BUSINESS
+						</p>
+						<p>
+							FROM <span>100$ </span>PER MONTH
+						</p>
+						<p>
+							Business Suppport
+						</p>
+						<p>
+							Business Analysis
+						</p>
+						<p>
+							24 our support
+						</p>
+						<div class = 'buton'>
+							START NOW
+						</div>
+					</div>
+					<div>
+						<p>
+							GOLD
+						</p>
+						<p>
+							FROM <span>100$ </span>PER MONTH
+						</p>
+						<p>
+							Business Suppport
+						</p>
+						<p>
+							Business Analysis
+						</p>
+						<p>
+							24 our support
+						</p>
+						<div class = 'buton'>
+							START NOW
+						</div>
+					</div>
+					<div>
+						<p>
+							ULTIMATE
+						</p>
+						<p>
+							FROM <span>100$ </span>PER MONTH
+						</p>
+						<p>
+							Business Suppport
+						</p>
+						<p>
+							Business Analysis
+						</p>
+						<p>
+							24 our support
+						</p>
+						<div class = 'buton'>
+							START NOW
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id = 'team'>
+		<div class = 'container'>
+			<div class = 'row'>
+				<div class = 'teem'>
+					<h1>TEEM</h1>
+					<p>MEET OUR TEAM</p>
+				</div>
+			</div>
+			<div class = 'row'>
+				<div class = 'col-md-3'>
+					<div class = 'box'>
+						<div class = 'image'>
+							image
+						</div>
+						<div class = 'paraqraf'>
+							<p>MR RAMGOPALAGARMA</p>
+							<p>DATA SPECIALIST</p>
+							<p>
+								<i class="fa fa-google" aria-hidden="true"></i>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class = 'col-md-3'>
+					<div class = 'box'>
+						<div class = 'image'>
+							image
+						</div>
+						<div class = 'paraqraf'>
+							<p>MADHAVIKUTTI MENON</p>
+							<p>CLIENT SUPPORT</p>
+							<p>
+								<i class="fa fa-google" aria-hidden="true"></i>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class = 'col-md-3'>
+					<div class = 'box'>
+						<div class = 'image'>
+							image
+						</div>
+						<div class = 'paraqraf'>
+							<p>DR.VENKITTARAMAN</p>
+							<p>CLIENT MANAEMENT</p>
+							<p>
+								<i class="fa fa-google" aria-hidden="true"></i>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class = 'col-md-3'>
+					<div class = 'box'>
+						<div class = 'image'>
+							image
+						</div>
+						<div class = 'paraqraf'>
+							<p>GEORGE DANIAL</p>
+							<p>COMMUNICATION</p>
+							<p>
+								<i class="fa fa-google" aria-hidden="true"></i>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id = 'blog'>
+		Burda bir blog adinda section olmaliydi amma vaxtim catmadi. cunki camaatin usagi saati duzeldir men hele htmml css ile vurusuram
+	</section>
+
+	<section id = 'contact'>
+		<div class = 'container-fluid'>
+			<div class = 'container'>
+				<div class = 'row'>
+						<div class = 'col-md-1'>
+							<img src="assets/images/logo.png">
+						</div>
+						<div class = 'col-md-2'>
+							<ul>
+								<li><span>MENU<span></li>
+								<li>HOME</li>
+								<li>ABOUT US</li>
+								<li>FEATURES</li>
+								<li>PORTFOLIO</li>
+							</ul>
+						</div>
+						<div class = 'col-md-2'>
+							<ul class='top'>
+								<li>
+									SERVICES
+								</li>
+								<li>
+									BLOG
+								</li>
+								<li>
+									BLOG PAGES
+								</li>
+								<li>
+									<i class="fa fa-google" aria-hidden="true"></i>
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</li>
+							</ul>
+						</div>
+						<div class = 'col-md-3'>
+							<ul>
+								<li><span>CONTACT</span></li>
+								<li>ADRESS</li>
+								<li>SECOND FLOOR</li>
+								<li>PHONE</li>
+								<li>EMAIL</li>
+							</ul>
+						</div>
+						<div class = 'col-md-4'>
+							<ul>
+								<li><span>NEWSLETER</span></li>
+								<li>SIGN UP</li>
+								<li>
+									<div class = 'inp'>
+										<input type = 'text'/>
+									</div>
+									<div class = 'search'>
+										GO
+									</div>
+								</li>	
+							</ul>
+						</div>
+				</div>
+				<div class = 'abs'>
+					<img src="assets/images/sol.png">
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

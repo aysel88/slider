@@ -1,0 +1,41 @@
+#team {
+height:675px;
+background-color: #E5EFF1;
+.row{
+	.teem{
+		margin-left:30px;
+	h1{
+		margin-top:100px;
+		font-weight:700;
+	}
+}
+	.box{
+		width: 265px;
+		height: 400px;
+		float: left;
+		margin:15px;
+		.image{
+			background-color: $tundboz;
+			text-align: center;
+			line-height: 270px;
+			color:white;
+			font-weight: bolder;
+			font-size:40px;
+		}
+		.paraqraf{
+			background-color: white;
+			height: 130px;
+			padding:30px;
+
+		/*	p:first-child{
+			margin-top:30px;
+			}*/
+			p:nth-child(2){
+				color:$narinci;
+		}
+		}
+	
+	}
+}
+
+}
